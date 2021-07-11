@@ -1,0 +1,37 @@
+# QuickDBD table modelling scipt
+
+Titles
+-
+Title_ID PK varchar(5)
+Title varchar(100)
+
+Departments
+-
+Dept_No PK varchar(4)
+Dept_Name varchar(100)
+
+Employees
+-
+Emp_No PK int
+Title_ID varchar(5) FK >- Titles.Title_ID
+DOB varchar(10)
+First_Name varchar(100)
+Last_Name varchar(100)
+Sex char(1)
+Hire_date varchar(10)
+
+Salaries
+-
+Emp_No PK int FK - Employees.Emp_No
+Salary money
+
+Dept_Emp
+-
+Emp_No PK int FK >- Employees.Emp_No
+Dept_No PK varchar(4) FK >- Departments.Dept_No
+#Manager_Emp_No int FK >- Employees.Emp_No
+
+Dept_Manager
+-
+Dept_No PK varchar(4) FK >- Dept_Emp.Dept_No
+Emp_No PK int FK >- Dept_Emp.Emp_No
