@@ -23,7 +23,7 @@ Hire_date varchar(10)
 Salaries
 -
 Emp_No PK int FK - Employees.Emp_No
-Salary money
+Salary float
 
 Dept_Emp
 -

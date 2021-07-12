@@ -35,7 +35,7 @@ CREATE TABLE Employees (
 
 CREATE TABLE Salaries (
     Emp_No int   NOT NULL,
-    Salary money   NOT NULL,
+    Salary float   NOT NULL,
     CONSTRAINT pk_Salaries PRIMARY KEY (
         Emp_No
      )

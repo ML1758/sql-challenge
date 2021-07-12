@@ -2,7 +2,7 @@
 -- Query 1
 SELECT 	emp.emp_no		as "Employee Number", 
 		emp.last_name	as "Last Name",
-		emp.first_name	as "First Name"
+		emp.first_name	as "First Name",
 		emp.sex			as "Sex",
 		sal.salary		as "Salary"
 		
@@ -13,7 +13,7 @@ ON		emp.emp_no = sal.emp_no
 
 -- =======================================================
 -- Query 2
-SELECT 	emp.first_name	as "First Name"
+SELECT 	emp.first_name	as "First Name",
 		emp.last_name	as "Last Name",
 		emp.hire_date	as "Hire Date"
 		
